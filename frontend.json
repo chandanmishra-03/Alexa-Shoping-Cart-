@@ -1,0 +1,399 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "po cart",
+            "intents": [
+                {
+                    "name": "AMAZON.FallbackIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "addIntent",
+                    "slots": [
+                        {
+                            "name": "qt",
+                            "type": "quantity"
+                        },
+                        {
+                            "name": "mes",
+                            "type": "mesurment"
+                        },
+                        {
+                            "name": "itemname",
+                            "type": "itemNameSlot"
+                        }
+                    ],
+                    "samples": [
+                        "put {qt} {mes} {itemname}",
+                        "put {qt} {mes} {itemname} to my cart",
+                        "add {qt} {mes} {itemname} ",
+                        "add {qt} {mes} {itemname} to cart",
+                        "add {qt} {mes} {itemname} to my cart"
+                    ]
+                },
+                {
+                    "name": "delIntent",
+                    "slots": [
+                        {
+                            "name": "qt",
+                            "type": "quantity"
+                        },
+                        {
+                            "name": "mes",
+                            "type": "mesurment"
+                        },
+                        {
+                            "name": "itemname",
+                            "type": "itemNameSlot"
+                        }
+                    ],
+                    "samples": [
+                        "remove {qt} {mes} {itemname}",
+                        "remove {qt} {mes} {itemname} from my cart",
+                        "remove {itemname}",
+                        "delete {itemname}",
+                        "delete {qt} {mes} {itemname} to cart",
+                        "delete {qt} {mes} {itemname} to my cart",
+                        "delete {qt} {mes} {itemname} "
+                    ]
+                },
+                {
+                    "name": "listIntent",
+                    "slots": [],
+                    "samples": [
+                        "list all",
+                        "say all items",
+                        "say all item",
+                        "list all items",
+                        "list all item"
+                    ]
+                },
+                {
+                    "name": "checkIntent",
+                    "slots": [],
+                    "samples": [
+                        "checkout",
+                        "do checkout",
+                        "buy all",
+                        "check items"
+                    ]
+                },
+                {
+                    "name": "nameIntent",
+                    "slots": [
+                        {
+                            "name": "name",
+                            "type": "nameSlot"
+                        }
+                    ],
+                    "samples": [
+                        "{name} is my name",
+                        "{name}",
+                        "myself {name}",
+                        "I am {name}",
+                        "my name is {name}"
+                    ]
+                },
+                {
+                    "name": "clearIntent",
+                    "slots": [],
+                    "samples": [
+                        "talk less",
+                        "clear my data",
+                        "clear my checklist",
+                        "clear all"
+                    ]
+                }
+            ],
+            "types": [
+                {
+                    "name": "quantity",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "twenty"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "ten"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "six"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "five"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "four"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "one"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "twenty two"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "thirteen"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "fourty four"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "three"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "two"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "mesurment",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "packets"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "pieces"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "grams"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "pound"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "litre"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "kg"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "itemNameSlot",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "chocolates"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "flour"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "wheat"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "ghee"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "mustard"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "grain"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "brush"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "soap"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "butter"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "egg"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "rice"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "bread"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "nameSlot",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "srinivas"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "sohan"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "ramesh"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "rohan"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "prakash"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "shivam"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "abhay"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "sravan"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "sagar"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "spoorthi"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "sanjeet"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "naveen"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "sahana"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "chandan kumar mishra"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "chandan"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "chandan mishra"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "checktSlot",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "submit"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "checkout"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "terminate"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "end"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "quit"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
